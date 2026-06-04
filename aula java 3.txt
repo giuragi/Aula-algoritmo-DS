@@ -106,3 +106,44 @@ class Main {
     	}
   }
 }
+
+--------------------------------------------------------------------
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("Nota 1: ");
+        double n1 = inp.nextDouble();
+
+        System.out.print("Nota 2: ");
+        double n2 = inp.nextDouble();
+
+        System.out.print("Nota 3: ");
+        double n3 = inp.nextDouble();
+
+        System.out.print("Nota 4: ");
+        double n4 = inp.nextDouble();
+
+        double nota = n1 + n2 + n3 + n4;
+        double media = nota / 4;
+
+        System.out.println("Total das notas: " + nota);
+        System.out.println("Média: " + media);
+
+        if (media <= 3) {
+            System.out.println("Aluno ficou retido");
+        } else if (media <= 5) {
+            System.out.println("Aluno ficou de reforço");
+        } else if (media <= 8) {
+            System.out.println("Atingiu a média, promovido");
+        } else {
+            System.out.println("Parabéns, você foi aprovado com mérito");
+        }
+
+        inp.close();
+    }
+}
