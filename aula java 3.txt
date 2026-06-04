@@ -1,0 +1,108 @@
+class Main {
+  public static void main(String[] args) {
+    String nome="Aiko";
+    String bairro="Mocca";
+    int idade=18;
+    for (int i=0 ; i<=5 ; i++) {
+    System.out.println("item "+i+" o nome e: "+nome+" o bairro: "+bairro+" idade: "+idade);
+    }
+  }
+}
+
+-------------------------------------------------------------
+
+class Main {
+  public static void main(String[] args) {
+    String nome="Aiko", bairro="Penha";
+    int idade=15;
+    
+    if(idade>=18 && (bairro=="Mocca" || bairro=="Penha")) {
+    System.out.println("Contratado");
+    } else {
+        System.out.println("Nao atende os criterios.");
+    }
+    System.out.println("Fim de programa.");
+  }
+}
+
+
+-----------------------------------------------------------
+
+class Main {
+  public static void main(String[] args) {
+   
+    int i=0;
+    if(i == 0) {
+    System.out.println("Valor igual");
+    } else if (i == 1)  {
+        System.out.println("o numero 1");
+    } else {
+        System.out.println("Valor diferença");
+  }
+  }
+}
+
+
+-----------------------------------------------------------
+
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    	Scanner input = new Scanner(System.in);
+    	System.out.println("Enter inteiro; ");
+    	double num_int = input.nextInt();
+    	System.out.println("Valor inteiro= " + num_int);
+    	String texto = input.next();
+    	System.out.println("Texto digitado = "+texto);
+    	input.close();
+
+  }
+}
+
+
+-----------------------------------------------------------
+
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+      	Scanner inp = new Scanner(System.in);
+    	System.out.print("Nota : ");
+    	double n1 = inp.nextint();
+    	System.out.print("Nota 2: ");
+    	double n2 = inp.nextint();
+    	System.out.print("Nota 3: ");
+        double n3 = inp.nextint();
+    	System.out.print("Nota 4: ");
+    	double n4 = inp.nextint();
+    	float nota = n1+ n2 + n3 + n4;
+    	float media = soma /4;
+        inp.close();
+    	}
+    	System.out.print("Nota: "+nota+" media: "+media);
+    	if (media>=8); {
+    	    System.out.print("Parabéns, você foi aprovado")
+    	}
+  }
+}
+
+
+-----------------------------------------------------------
+
+
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+      	Scanner inp = new Scanner(System.in);
+    	System.out.print("Digite o nome: ");
+    	String texto = inp.next();
+    	System.out.print("Quantidade de vezes para repetir: ");
+    	double num = inp.nextInt();
+    	for (int i=1 ; i<=num ; i++) {
+    	System.out.println("Nome numero "+i+"= "+texto);
+    	inp.close();
+    	}
+  }
+}
